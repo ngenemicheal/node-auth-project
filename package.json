@@ -1,0 +1,33 @@
+{
+    "name": "auth-project",
+    "version": "1.0.0",
+    "description": "",
+    "homepage": "https://github.com/ngenemicheal/node-auth-project#readme",
+    "bugs": {
+        "url": "https://github.com/ngenemicheal/node-auth-project/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ngenemicheal/node-auth-project.git"
+    },
+    "license": "ISC",
+    "author": "techie-mike",
+    "type": "commonjs",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node --env-file=.env main.js",
+        "dev": "node --watch --trace-warnings --env-file=.env main.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^3.0.2",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "express": "^5.1.0",
+        "helmet": "^8.1.0",
+        "joi": "^18.0.1",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.18.1",
+        "nodemailer": "^7.0.6"
+    }
+}
