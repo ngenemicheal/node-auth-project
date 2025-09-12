@@ -16,7 +16,7 @@ const userSchema = mongoose.Schema(
             required: [true, "Password is required!"],
             trim: true,
             select: false,
-            minLength: [5, "Password must have atleast 8 characters!"],
+            minLength: [8, "Password must have atleast 8 characters!"],
         },
         verified: {
             type: Boolean,
@@ -34,7 +34,7 @@ const userSchema = mongoose.Schema(
             type: String,
             select: false,
         },
-        forgotPasswordCodeValidatio: {
+        forgotPasswordCodeValidation: {
             type: Number,
             select: false,
         },
