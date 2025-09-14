@@ -104,3 +104,15 @@ exports.acceptForgotPasswordCodeSchema = Joi.object({
             "any.required": "New password is required",
         }),
 });
+
+exports.createPostSchema = Joi.object({
+    title: Joi.string().min(5).max(60).required(),
+    description: Joi.string().min(5).max(600).required(),
+    userId: Joi.string().required(),
+});
+
+exports.updatePostSchema = Joi.object({
+    title: Joi.string().trim().min(1).max(60).empty("").optional(),
+    description: Joi.string().trim().min(1).max(600).empty("").optional(),
+    userId: Joi.string().required(),
+}).min(2); // ensures at least userId + 1 field
